@@ -21,7 +21,7 @@ const createAndSavePerson = (done) => {
     favoriteFoods: ["Cireng", "Lumpia", "Dimsum"]
   });
 
-  newPerson.save(function(err, data)) {
+  newPerson.save(function(err, data) {
     if (err) {
       return console.error("ERROR");
     }
