@@ -88,7 +88,7 @@ const findAndUpdate = (personName, done) => {
     if (err) {
       return console.error("ERROR");
     }
-    done(null /*, data*/);
+    done(null, person);
   });
 };
 
