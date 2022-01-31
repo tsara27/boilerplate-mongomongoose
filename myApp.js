@@ -115,8 +115,8 @@ const queryChain = (done) => {
   const foodToSearch = "burrito";
   Person.find({ favoriteFoods: [foodToSearch] })
     .sort({ name: 'asc' })
-    .select(['name', 'favoriteFoods'])
     .limit(2)
+    .select(['name', 'favoriteFoods'])
     .exec(function(err, documents) {
       if (err) {
         return console.error("ERROR");
